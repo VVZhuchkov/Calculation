@@ -8,6 +8,10 @@ public class Calculation {
         String expression = "(2+((8+010)/2)/(1+1*2))+2";
         Calculator calculator = new Calculator();
         int result = calculator.calculator(expression);
+        Calculation.outputResult(result);
+    }
+
+    public static void outputResult(int result){
         System.out.println("The result of expression is: " + result);
     }
 }
